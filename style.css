@@ -1,0 +1,55 @@
+body{
+	font-family: "Comic Sans MS";
+	color: white;
+	font-size: .8em;
+}
+
+.covers {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	margin: 5px;
+	float: left;
+	position: relative;
+}
+
+.covers em{
+
+}
+
+.covers article{
+	position: relative;
+	margin-top: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 320px;
+	padding: 2px;
+	box-sizing: border-box;
+	/*!*transition: margin-top 1s; *! easy*/
+	animation: goDownNow 1s forwards;
+}
+
+.covers:hover article{
+	animation: goUpNow 1s forwards;
+}
+
+@keyframes goUpNow {
+	100% {margin-top: -320px;}
+}
+
+@keyframes goDownNow {
+	0%{margin-top: -320px;}
+	18%{margin-top: -200px;}
+	25%{margin-top: -240px;}
+	38%{margin-top: -120px;}
+	50%{margin-top: -160px;}
+	68%{margin-top: -40px;}
+	75%{margin-top: -80px;}
+	88%{margin-top: 0;}
+	100% {margin-top: 0;}
+}
+
+.validation {
+	clear: left;
+	text-align: center;
+	padding-top: 10px;
+}
